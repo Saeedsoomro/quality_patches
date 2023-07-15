@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+body {
+  @apply m-0 p-0 overflow-x-hidden;
+}
+.transit {
+  @apply transition transition-all duration-700 ease-in-out;
+}
+
+.navRight {
+  @apply h-full w-full relative flex justify-between md:px-6 items-center border-2 border-lightgray;
+}
+
+.downIcon {
+  @apply text-lg text-lightgray;
+}
+.navTab {
+  @apply flex items-center text-primary 2xl:text-xl font-semibold uppercase;
+}
+
+.navTabWithBorder {
+  @apply flex items-center text-primary 2xl:text-xl px-1 md:px-4 2xl:px-10  py-2 border-l-[3px] font-semibold border-lightgray;
+}
+.navSearchWithBorder {
+  @apply flex items-center text-primary text-xl px-1 2xl:text-4xl lg:text-2xl md:px-5 2xl:px-10 py-2 border-l-[3px] font-bold border-lightgray;
+}
+
+.listContainer {
+  @apply border-b-[3px]  border-lightgray flex items-center justify-between w-[20rem];
+}
+
+.listItem {
+  @apply py-2 hover:text-lightgray cursor-pointer font-semibold list-none text-primary text-lg;
+}
+
+input,
+textarea {
+  @apply border border-lightgray focus:outline-none my-2 flex-1  px-4  py-2 rounded;
+}
+
+input[type="submit"] {
+  @apply bg-primary text-white mx-1;
+}
+
+.loginForm {
+  @apply absolute text-left  bg-white right-0 shadow text-center mt-8 p-2 lg:p-6 2xl:p-10;
+}
+
+.searchCard {
+  @apply absolute bg-white text-left right-0 shadow text-center mt-8;
+}
+
+/* footer */
+
+.socialIcons {
+  @apply text-primary  hover:text-lightgray hover:cursor-pointer mr-2;
+}
+.first-container {
+  background-image: url("../public/assets/images/bgone.png");
+}
+
+.second-container {
+  background-image: url("../public/assets/images/bgtwo.png");
+}
+
+.third-container {
+  background-image: url("../public/assets/images/bgthree.png");
+}
+
+.fourth-container {
+  background-image: url("../public/assets/images/bgfour.png");
+}
+
+.fifth-container {
+  background-image: url("../public/assets/images/bgfive.png");
+}
